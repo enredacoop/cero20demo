@@ -1,0 +1,7 @@
+/* Specific styles */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    display: block;
+}
