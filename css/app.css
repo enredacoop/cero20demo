@@ -1,7 +1,6 @@
 /* Specific styles */
 
 footer {
-    position: absolute;
     bottom: 0;
     display: block;
 }
@@ -18,5 +17,10 @@ float: right;
 
 .buscador {
 	padding: 5px;
+
+}
+
+#dashboard {
+	background-color: #eee;
 
 }
