@@ -5,3 +5,13 @@ footer {
     bottom: 0;
     display: block;
 }
+
+.right {
+float: right;
+
+}
+
+.fixed {
+
+	position: fixed;
+}
