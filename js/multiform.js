@@ -9,7 +9,7 @@ $(document).ready(function() {
 				console.log('onLast');
 			}, onTabClick: function(tab, navigation, index) {
 				console.log('onTabClick');
-				alert('on tab click disabled');
+			//	alert('on tab click disabled');
 			}, onTabShow: function(tab, navigation, index) {
 				console.log('onTabShow');
 				var $total = navigation.find('li').length;
@@ -28,7 +28,7 @@ $(document).ready(function() {
 					console.log('onLast');
 				}, onTabClick: function(tab, navigation, index) {
 					console.log('onTabClick');
-					alert('on tab click disabled');
+				//	alert('on tab click disabled');
 				}, onTabShow: function(tab, navigation, index) {
 					console.log('onTabShow');
 					var $total = navigation.find('li').length;
@@ -74,7 +74,7 @@ $(document).ready(function() {
 						if(index==2) {
 							// Make sure we entered the name
 							if(!$('#name').val()) {
-								alert('You must enter your name');
+							//	alert('You must enter your name');
 								$('#name').focus();
 								return false;
 							}
@@ -89,7 +89,7 @@ $(document).ready(function() {
 						console.log('onLast');
 					}, onTabClick: function(tab, navigation, index) {
 						console.log('onTabClick');
-						alert('on tab click disabled');
+					//	alert('on tab click disabled');
 						return false;
 					}, onTabShow: function(tab, navigation, index) {
 						console.log('onTabShow');
@@ -101,7 +101,7 @@ $(document).ready(function() {
 					
 				
 				$('#tabsleft .finish').click(function() {
-					alert('Finished!, Starting over!');
+					//alert('Finished!, Starting over!');
 					$('#tabsleft').find("a[href*='tabsleft-tab1']").trigger('click');
 				});	
 					
