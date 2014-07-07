@@ -24,3 +24,9 @@ float: right;
 	background-color: #eee;
 
 }
+
+.multiform .form-group {
+
+	margin-bottom: 40px;
+padding-bottom: 20px;
+}

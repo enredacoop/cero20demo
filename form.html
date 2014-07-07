@@ -13,6 +13,8 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/app.css" rel="stylesheet" type="text/css">
+    
+<link href="css/prettify.css" rel="stylesheet">
 
     <!-- IE8 support for HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -84,106 +86,290 @@
         <div class="container">
             <div class="row">
                <div class="col-lg-12 "> 
-                  <div class="progress progress-striped">
-                    <div class="progress-bar progress-bar-warning" style="width: 60%"></div>
-                    </div>
-              </div>
-               <div class="row">
-               <div class="col-lg-12 ">
-                    <ul class="pagination pagination-lg">
-                        <li class="disabled"><a href="#">«</a></li>
-                        <li class="active"><a href="#">Datos IEI</a></li>
-                        <li><a href="#">Climatización</a></li>
-                        <li><a href="#">Iluminación </a></li>
-                        <li><a href="#">Electrodomesticos </a></li>
-                        <li><a href="#">Aparatos electricos </a></li>
-                      <li><a href="#">»</a></li>
-                      </ul>
-                  </div>
-              </div>
+               
+              </div>          
         </div>
     </section>      
   
   <section>
-<div class="container">
+<div class="container multiform">
             <div class="row">
-               <div class="col-lg-9 "> 
+               <div class="col-lg-12 "> 
+          <div id="pills">
+          <ul>
+              <li><a href="#pills-tab1" data-toggle="tab">Datos Generales</a></li>
+            <li><a href="#pills-tab2" data-toggle="tab">Climatización</a></li>
+            <li><a href="#pills-tab3" data-toggle="tab">Iluminación</a></li>
+            <li><a href="#pills-tab4" data-toggle="tab">Electrodomesticos</a></li>
+            <li><a href="#pills-tab5" data-toggle="tab">Aparatos electricos</a></li>
+            <li><a href="#pills-tab6" data-toggle="tab">Enviar</a></li>
+          </ul>
+          <div class="progress progress-danger progress-striped active">
+            <div class="progress-bar bar progress-bar-warning"></div>
+          </div>
+          <div class="tab-content">
+              <div class="tab-pane" id="pills-tab1">
+              <div class="row"> 
+              <h3>Datos generales</h3>
+                    <div class="form-group">
+                      <label for="inputEmail" class="col-lg-2 control-label">Dirección</label>
+                      <div class="col-lg-10">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="Dirección">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputPassword" class="col-lg-2 control-label">Municipio</label>
+                      <div class="col-lg-10">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Municipio">
+                        </div>
+                    </div>
+                     <div class="form-group">
+                      <label for="inputEmail" class="col-lg-2 control-label">Provincia</label>
+                      <div class="col-lg-10">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="Provincia">
+                      </div>
+                     </div> 
+                     <div class="form-group">
+                       <label for="select" class="col-lg-2 control-label">Tipo vivienda</label>
+                      <div class="col-lg-10">
+                        <select class="form-control" id="select">
+                         <option>piso en bloque</option>
+                          <option>unifamiliar o adosado</option>
+                        </select>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+              <div class="tab-pane" id="pills-tab2">
+              <div class="row"> 
+              <h4>Climatización</h4>
+                   <div class="form-group">
+                      <label for="inputEmail" class="col-lg-2 control-label"></label>
+                      <div class="col-lg-10">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="Dirección">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputPassword" class="col-lg-2 control-label">Municipio</label>
+                      <div class="col-lg-10">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Municipio">
+                        </div>
+                    </div>
+                     <div class="form-group">
+                      <label for="inputEmail" class="col-lg-2 control-label">Provincia</label>
+                      <div class="col-lg-10">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="Provincia">
+                      </div>
+                     </div> 
+                     <div class="form-group">
+                       <label for="select" class="col-lg-2 control-label">Tipo vivienda</label>
+                      <div class="col-lg-10">
+                        <select class="form-control" id="select">
+                         <option>piso en bloque</option>
+                          <option>unifamiliar o adosado</option>
+                        </select>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            <div class="tab-pane" id="pills-tab3">
+              <div class="row"> 
+                <h4>Iluminación</h4>
+                    <div class="form-group">
+                      <label for="select" class="col-lg-1 control-label">Tipo lamparas</label>
+                      <div class="col-lg-2">
+                        <select class="form-control" id="select">
+                         <option>Incandescentes</option>
+                          <option>halogena</option>
+                           <option>Fluorescente tubular </option>
+                            <option>LED</option>
+                        </select>
+                      </div>
+                      <label for="inputEmail" class="col-lg-1 control-label">Nº lamparas</label>
+                      <div class="col-lg-1">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="cantidad">
+                      </div>
+                   
+                      <label for="inputPassword" class="col-lg-1 control-label">Nº horas encencidads</label>
+                      <div class="col-lg-1">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="horas">
+                        </div>
+                    
+                     
+                      <label for="inputEmail" class="col-lg-1 control-label">Potencia por unidad</label>
+                      <div class="col-lg-1">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="Potencia">
+                      </div>
+                     </div> 
+                                
+ </div>
 
-                        <form class="form-horizontal">
-  <fieldset>
-    <legend>Legend</legend>
-    <div class="form-group">
-      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-      <div class="col-lg-10">
-        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="inputPassword" class="col-lg-2 control-label">Password</label>
-      <div class="col-lg-10">
-        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-        <div class="checkbox">
-          <label>
-            <input type="checkbox"> Checkbox
-          </label>
+              </div>
+            <div class="tab-pane" id="pills-tab4">
+             <div class="row">    
+              <h5> Cocina</h5>
+                 <div class="form-group">
+                      <label for="select" class="col-lg-1 control-label">Tipo cocina</label>
+                      <div class="col-lg-2">
+                        <select class="form-control" id="select">
+                         <option>eléctrica</option>
+                          <option>vitrocerámica</option>
+                           <option>inducción</option>
+                            <option>gas</option>
+                            </select>
+                      </div>
+                      <label for="inputEmail" class="col-lg-1 control-label">Antigüedad del equipo </label>
+                      <div class="col-lg-1">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="Años">
+                      </div>
+                   
+                      <label for="inputPassword" class="col-lg-1 control-label">Nº de veces por semana</label>
+                      <div class="col-lg-1">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="veces">
+                        </div>
+                     <label for="select" class="col-lg-1 control-label">Calificación energética</label>
+                      <div class="col-lg-2">
+                        <select class="form-control" id="select">
+                         <option>XXX</option>
+                          <option>YYY</option>
+                           <option>ZZZZ</option>
+                            <option>gas</option>
+                            </select>
+                    </div>
+                  </div>
+
+              <h5> Frigorífico</h5>
+                 <div class="form-group">
+                  
+                      <label for="inputEmail" class="col-lg-1 control-label">Antigüedad del equipo </label>
+                      <div class="col-lg-1">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="Años">
+                      </div>
+                   
+                      <label for="inputPassword" class="col-lg-1 control-label">Nº de veces por semana</label>
+                      <div class="col-lg-1">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="veces">
+                        </div>
+                     <label for="select" class="col-lg-1 control-label">Calificación energética</label>
+                      <div class="col-lg-2">
+                        <select class="form-control" id="select">
+                         <option>XXX</option>
+                          <option>YYY</option>
+                           <option>ZZZZ</option>
+                            <option>gas</option>
+                            </select>
+                    </div>
+                  </div>
+
+                <h5> Lavadora</h5>
+                 <div class="form-group">
+                      <label for="select" class="col-lg-1 control-label">Carga lavadora (kg)</label>
+                      <div class="col-lg-2">
+                        <select class="form-control" id="select">
+                         <option>3 Kg</option>
+                          <option>5 Kg</option>
+                           <option>6 Kg</option>
+                            <option>8 Kg</option>
+                            </select>
+                      </div>
+                      <label for="inputEmail" class="col-lg-1 control-label">Antigüedad del equipo </label>
+                      <div class="col-lg-1">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="Años">
+                      </div>
+                   
+                      <label for="inputPassword" class="col-lg-1 control-label">Nº de veces por semana</label>
+                      <div class="col-lg-1">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="veces">
+                        </div>
+                     <label for="select" class="col-lg-1 control-label">Calificación energética</label>
+                      <div class="col-lg-2">
+                        <select class="form-control" id="select">
+                         <option>XXX</option>
+                          <option>YYY</option>
+                           <option>ZZZZ</option>
+                            <option>gas</option>
+                            </select>
+                    </div>
+                  </div>
+                 </div>
+
+
+              </div>
+            <div class="tab-pane" id="pills-tab5">
+             <div class="row">    
+               <h5> Televisores</h5>
+                 <div class="form-group">
+                      <label for="inputEmail" class="col-lg-2 control-label">Tamaño de pantalla </label>
+                      <div class="col-lg-1">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="pulgadas">
+                      </div>
+                   
+                      <label for="inputPassword" class="col-lg-2 control-label">Nº de televisores iguales</label>
+                      <div class="col-lg-1">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="cantidad">
+                      </div>
+                    <label for="inputEmail" class="col-lg-2 control-label">Tiempo activo al día</label>
+                      <div class="col-lg-1">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="Horas">
+                      </div>        
+                  </div>
+                </div>
+              </div>
+            <div class="tab-pane" id="pills-tab6">
+          <div class="row">  
+               <div class="col-lg-10 col-lg-offset-2">
+                 <h3>confirme los datos introducidos y pulse en enviar.</h3>
+                 </div>
+
+                   <div class="col-lg-6">
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                      <h4 class="list-group-item-heading">Datos vivienda</h4>
+                      <p class="list-group-item-text">Calle lorem ipsum.</p>
+                     <p class="list-group-item-text">Cp: 41009 - Sevilla.</p>
+                    </a>
+                    <a href="#" class="list-group-item">
+                      <h4 class="list-group-item-heading">Iluminación</h4>
+                      <p class="list-group-item-text">Lámparas tipo LED  <span class="badge">2</span></p>
+                      <p class="list-group-item-text">Horas al día: 6</p> 
+                      <p class="list-group-item-text">Potencia (w): 60W </p>
+                    </a>
+                  </div>
+                </div>
+                   
+                   <div class="col-lg-6">
+                      <div class="list-group">
+                      <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">Cocina</h4>
+                        <p class="list-group-item-text">12 años. 6 veces por semana</p>
+                      </a>
+                      <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">Frigorífico <span class="badge">2</span></h4>
+                        <p class="list-group-item-text"> 12 años.</p>
+                      </a>
+                    </div>
+                  </div>
+
+       <div class="col-lg-2 col-lg-offset-6">
+                 <button type="submit" class="btn btn-primary">Enviar datos</button>
+                </div>
+             </div>
         </div>
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="textArea" class="col-lg-2 control-label">Textarea</label>
-      <div class="col-lg-10">
-        <textarea class="form-control" rows="3" id="textArea"></textarea>
-        <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="col-lg-2 control-label">Radios</label>
-      <div class="col-lg-10">
-        <div class="radio">
-          <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-            Option one is this
-          </label>
+           
+
+            <ul class="pager wizard">
+              <li class="previous first" style="display:none;"><a href="#">Datos Generales</a></li>
+              <li class="previous"><a href="#">Anterior</a></li>
+              <li class="next last" style="display:none;"><a href="#">Enviar</a></li>
+                <li class="next"><a href="#">Siguiente</a></li>
+            </ul>
+          </div>  
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-            Option two can be something else
-          </label>
-        </div>
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="select" class="col-lg-2 control-label">Selects</label>
-      <div class="col-lg-10">
-        <select class="form-control" id="select">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-        <br>
-        <select multiple="" class="form-control">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-      </div>
-    </div>
-    <div class="form-group">
-      <div class="col-lg-10 col-lg-offset-2">
-        <button class="btn btn-default">Cancel</button>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </div>
-    </div>
-  </fieldset>
-</form>
+
 
                   </div>
-                     <div class="col-lg-3 "> 
+            
+            <!--         <div class="col-lg-3 "> 
                       <div class="panel panel-success fixed">
                         <div class="panel-heading">
                           <h3 class="panel-title">Recopilación datos</h3>
@@ -218,6 +404,7 @@
                         </div>
                       </div>                    
                     </div>
+                    -->
              </div>
         </div>
  </section>  
@@ -233,6 +420,9 @@
     </footer>
   <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="http://bootswatch.com/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+ <script src="js/jquery.bootstrap.wizard.js"></script>
+  <script src="js/multiform.js"></script>
+  <script src="js/prettify.js"></script>
 </body>
 
 </html>
