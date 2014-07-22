@@ -30,3 +30,8 @@ float: right;
 	margin-bottom: 40px;
 padding-bottom: 20px;
 }
+
+.listicon li{
+
+list-style: none !important;
+}
