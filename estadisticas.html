@@ -20,6 +20,38 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
+    <style>
+      .dash {
+        width: 138px;
+        height: 96px;
+        float: left;
+        margin-left: 2px;
+        padding-left: 13px;
+        position: relative;
+        color: #333;
+      }
+      .dash.hours {
+        background: url('img/dark_hours_dash.png') no-repeat scroll 0px 0px transparent;
+      }
+      .dash.minutes {
+        background: url('img/dark_minutes_dash.png') no-repeat scroll 0px 0px transparent;
+      }
+      .dash_title {
+        display: none;
+      }
+      .dash .digit {
+        font: bold 52pt Verdana;
+        float: left;
+        width: 59px;
+        text-align: center;
+        position: relative;
+      }
+      .dash .text {
+        margin-right: 20px;
+        font-size: 32px;
+      }
+    </style>
+
 
 </head>
 
@@ -104,13 +136,39 @@
                             
                             <h1> ¿Cúando será más barato el precio de la electricidad mañana? </h1>
                           </div>
+
+                            <!-- http://www.littlewebthings.com/projects/countdown/example/ -->
+
                                     <div class="col-lg-8">
                                           <div class="panel panel-success">
                                             <div class="panel-heading">
-                                              <h3 class="panel-title">Hora más económica</h3>
+                                              <h3 class="panel-title">Intervalo horario más económico</h3>
                                             </div>
-                                            <div class="panel-body">
-                                                   <div id="container2" style="min-width: 610px; height: 400px; margin: 0 auto"></div>
+                                            <div class="panel-body" style="background:#333;">
+                                              <div class="">
+                                                <div class="hours dash">
+                                                  <span class="dash_title">hours</span>
+                                                  <div class="digit"><div style="display: none;" class="top">0</div><div style="display: block;" class="bottom">0</div></div>
+                                                  <div class="digit"><div style="display: none;" class="top">3</div><div style="display: block;" class="bottom">0</div></div>
+                                                </div>
+                                                <div class="minutes dash">
+                                                  <span class="dash_title">minutes</span>
+                                                  <div class="digit"><div style="display: none;" class="top">0</div><div style="display: block;" class="bottom">3</div></div>
+                                                  <div class="digit"><div style="display: none;" class="top">3</div><div style="display: block;" class="bottom">0</div></div>
+                                                </div>
+                                              </div>
+                                              <div class="right">
+                                                <div class="hours dash">
+                                                  <span class="dash_title">hours</span>
+                                                  <div class="digit"><div style="display: none;" class="top">0</div><div style="display: block;" class="bottom">0</div></div>
+                                                  <div class="digit"><div style="display: none;" class="top">3</div><div style="display: block;" class="bottom">3</div></div>
+                                                </div>
+                                                <div class="minutes dash">
+                                                  <span class="dash_title">minutes</span>
+                                                  <div class="digit"><div style="display: none;" class="top">0</div><div style="display: block;" class="bottom">3</div></div>
+                                                  <div class="digit"><div style="display: none;" class="top">3</div><div style="display: block;" class="bottom">0</div></div>
+                                                </div>
+                                              </div>
                                             </div>
                                           </div>
                                     </div>
