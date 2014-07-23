@@ -47,9 +47,16 @@ section {
  background-color: #FCCF85;
 }
 
-.factura {color: #ffffff;
+.factura  {color: #ffffff;
  background-color: #FCCF85 !important; }
 
+ #pills-tab6  .row {
+ 	padding-left: 20px;
+
+ }
+.afact a {
+	color:  #FCCF85 !important;
+}
  li.active .factura>a, li.active.factura>a:hover, li.active .factura>>a:focus {
  background-color: #FCCF85 !important; 
 }
