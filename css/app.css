@@ -35,3 +35,21 @@ padding-bottom: 20px;
 
 list-style: none !important;
 }
+.botones a{
+
+}
+
+section {
+	margin-top: 30px;
+}
+
+#pills-tab6 {
+ background-color: #FCCF85;
+}
+
+.factura {color: #ffffff;
+ background-color: #FCCF85 !important; }
+
+ li.active .factura>a, li.active.factura>a:hover, li.active .factura>>a:focus {
+ background-color: #FCCF85 !important; 
+}
