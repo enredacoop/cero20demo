@@ -40,12 +40,16 @@ list-style: none !important;
 }
 
 section {
-	margin-top: 30px;
+	margin-top: 90px;
+	
+}
+section #precio{
+	margin-top: -10px;
+	
 }
 
-#pills-tab6 {
- background-color: #FCCF85;
-}
+
+
 
 .factura  {color: #ffffff;
  background-color: #FCCF85 !important; }
@@ -59,4 +63,19 @@ section {
 }
  li.active .factura>a, li.active.factura>a:hover, li.active .factura>>a:focus {
  background-color: #FCCF85 !important; 
+}
+
+.linea {
+color: #7cb5ec;
+font-size: 30px;
+float: right;
+padding-right: 120px;
+margin-top: -45px;
+}
+.success {
+color: #43ac6a;
+}
+.rojo {
+color: #f04124;
+
 }
