@@ -24,3 +24,61 @@ float: right;
 	background-color: #eee;
 
 }
+<<<<<<< HEAD
+=======
+
+.multiform .form-group {
+
+	margin-bottom: 40px;
+padding-bottom: 20px;
+}
+
+.listicon li{
+
+list-style: none !important;
+}
+.botones a{
+
+}
+
+section {
+	margin-top: 90px;
+	
+}
+section #precio{
+	margin-top: -10px;
+	
+}
+
+
+
+
+.factura  {color: #ffffff;
+ background-color: #FCCF85 !important; }
+
+ #pills-tab6  .row {
+ 	padding-left: 20px;
+
+ }
+.afact a {
+	color:  #FCCF85 !important;
+}
+ li.active .factura>a, li.active.factura>a:hover, li.active .factura>>a:focus {
+ background-color: #FCCF85 !important; 
+}
+
+.linea {
+color: #7cb5ec;
+font-size: 30px;
+float: right;
+padding-right: 120px;
+margin-top: -45px;
+}
+.success {
+color: #43ac6a;
+}
+.rojo {
+color: #f04124;
+
+}
+>>>>>>> 64c034b077154b592f692286597af7d0167df482

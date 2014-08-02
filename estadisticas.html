@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>cero20</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/app.css" rel="stylesheet" type="text/css">
+
+    <!-- IE8 support for HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+      .dash {
+        width: 138px;
+        height: 96px;
+        float: left;
+        margin-left: 2px;
+        padding-left: 13px;
+        position: relative;
+        color: #333;
+      }
+      .dash.hours {
+        background: url('img/dark_hours_dash.png') no-repeat scroll 0px 0px transparent;
+      }
+      .dash.minutes {
+        background: url('img/dark_minutes_dash.png') no-repeat scroll 0px 0px transparent;
+      }
+      .dash_title {
+        display: none;
+      }
+      .dash .digit {
+        font: bold 52pt Verdana;
+        float: left;
+        width: 59px;
+        text-align: center;
+        position: relative;
+      }
+      .dash .text {
+        margin-right: 20px;
+        font-size: 32px;
+      }
+    </style>
+
+
+</head>
+
+<body id="view">
+    <div id="demo">
+  <div class="btn-group">
+  <button type="button" class="btn btn-success">Pantallas demo</button>
+  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="index.html">Login</a></li>
+    <li><a href="index2.html">Perfil</a></li>
+    <li><a href="form.html">Informe</a></li>
+    <li><a href="view.html">Resultado</a></li>
+
+    <li class="divider"></li>
+    <li><a href="dashboard.html">Aseguradora</a></li>
+  </ul>
+    </div>
+<hr>
+    </div>
+
+    
+
+    <header>
+            <div class="navbar navbar-inverse">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">  <img src="img/logo20.png" width="70px"> DEMO </a>
+  </div>
+  <div class="navbar-collapse collapse navbar-inverse-collapse">
+   
+     
+  <ul class="nav navbar-nav navbar-right">
+     
+     <li ><a href="index2.html">Perfil</a></li>
+    <li ><a href="form.html">Informe</a></li>
+    <li class="active"><a href="view.html">Resultado</a></li>
+    
+    </ul>
+  </div>
+</div>
+    </header>
+
+
+    <section id="consumo">
+        <div class="container">
+          <div class="row">
+       
+          <div class="col-lg-10 text-right " >
+                        
+                  <a class="btn btn-primary " href="estadisticas.html#mercado"> ¿Cúal es mi mercado? </a> 
+                      <a class="btn btn-info " href="estadisticas.html#mercado"> ¿Precio Mañana? </a>
+                  <a class="btn btn-success" href="estadisticas.html#barato"> ¿Hora más barata? </a> 
+                      <a class="btn btn-danger " href="estadisticas.html#calculadora"> Calcúla tu factura </a>                 
+    
+          </div>
+
+
+          <div class="row">
+            <div class="col-lg-12">
+
+<section id="mercado">
+    <div class="container">
+                     <div class="row">
+                                   
+                           <div class="col-lg-4">
+                            
+                            <h1> ¿Qué tarifa tengo y en qué mercado? </h1>
+                            <br>
+                         <p> <h4>MERCADO: Mercado Regulado (PVPC) </h4><span class="label label-info ">+ INFO</span> </p>
+                          <p><h4>TARFIA: GENERAL 2.0 A  </h4><span class="label label-info ">+ INFO</span></p>
+                              <p><h4>CONTADOR: Digital Telegestionado </h4><span class="label label-info ">+ INFO</span></p>
+                          <br>
+<h5>La línea de la gráfica <br> que le corresponde es:<div class="linea">_____</div></h5>
+                          </div>
+
+                          <div class="col-lg-8">
+                                
+
+                          <div id="container2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                          </div>
+                   </div>
+                </div>
+ </section>
+
+<section id="precio"> 
+                <div class="container">
+                         <div class="row">
+                           <div class="col-lg-4">
+                            
+                            <h1> Conozca el precio de la electricidad mañana </h1>
+
+                            <br><br>
+                          <h4>Consulte el precio para el día:</h4> 
+                                    
+                                      <div class='input-group date' id='datetimepicker1'>
+                                      <input type='text' class="form-control col-lg-4" />
+                                      <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                                      </span>
+                                      </div>
+                              
+
+                          </div>
+                       <!--    <div class="col-lg-8">
+                               <div class="row">
+                                    <div class="col-lg-12">
+                                    <div class="panel panel-primary">
+                                      <div class="panel-heading">
+                                        <h3 class="panel-title">El precio Kw/h de Mañana, Martes 15 de Julio de 2014 </h3>
+                                      </div>
+                                      <div class="panel-body">
+                                        <div id="container" style="min-width: 610px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+                                      </div>
+                                    </div>
+
+                                 </div>
+                            -->
+                              </div>
+
+                         </div>
+                </section>
+
+
+<section id="barato">
+    <div class="container">
+                     <div class="row">
+                                    <div class="row">
+                           <div class="col-lg-4">
+                            
+                            <h1> ¿Cúando será más barato el precio de la electricidad mañana? </h1>
+                            <h5> <span class="success"> Solo si estas en el mercado Regulado y tienes un Contador Digital telegestionado</span> <span class="label label-success ">+ INFO</span></h5>
+                          </div>
+
+                            <!-- http://www.littlewebthings.com/projects/countdown/example/ -->
+
+                                    <div class="col-lg-8">
+                                          <div class="panel panel-success">
+                                            <div class="panel-heading">
+                                              <h3 class="panel-title">Intervalo horario más económico</h3>
+                                            </div>
+                                            <div class="panel-body" style="background:#333;">
+                                              <div class="">
+                                                <div class="hours dash">
+                                                  <span class="dash_title">hours</span>
+                                                  <div class="digit"><div style="display: none;" class="top">0</div><div style="display: block;" class="bottom">0</div></div>
+                                                  <div class="digit"><div style="display: none;" class="top">3</div><div style="display: block;" class="bottom">0</div></div>
+                                                </div>
+                                                <div class="minutes dash">
+                                                  <span class="dash_title">minutes</span>
+                                                  <div class="digit"><div style="display: none;" class="top">0</div><div style="display: block;" class="bottom">3</div></div>
+                                                  <div class="digit"><div style="display: none;" class="top">3</div><div style="display: block;" class="bottom">0</div></div>
+                                                </div>
+                                              </div>
+                                              <div class="right">
+                                                <div class="hours dash">
+                                                  <span class="dash_title">hours</span>
+                                                  <div class="digit"><div style="display: none;" class="top">0</div><div style="display: block;" class="bottom">0</div></div>
+                                                  <div class="digit"><div style="display: none;" class="top">3</div><div style="display: block;" class="bottom">3</div></div>
+                                                </div>
+                                                <div class="minutes dash">
+                                                  <span class="dash_title">minutes</span>
+                                                  <div class="digit"><div style="display: none;" class="top">0</div><div style="display: block;" class="bottom">3</div></div>
+                                                  <div class="digit"><div style="display: none;" class="top">3</div><div style="display: block;" class="bottom">0</div></div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+
+                               </div>
+
+        </div>
+
+    </section>
+
+<section id="calculadora">
+    <div class="container">
+                     <div class="row">
+                                   
+                           <div class="col-lg-4">
+                            
+                            <h1>Comprueba el precio de la electricidad en tu factura</h1>
+                              <h5> <span class="rojo"> Solo si estas en el Mercado Regulado y tienes un Contador Analógico <br>o Digital NO telegestionado</span> <span class="label label-danger">+ INFO</span></h5>
+                          </div>
+
+                          <div class="col-lg-4">  
+                                  <form class="form-horizontal">
+                                    <legend>Cácula el coste del termino de energía de tu factura</legend>
+                                      <div class="form-group">
+                                          <label for="select" class="col-lg-2 control-label">Tarifa</label>
+                                          <div class="col-lg-10">
+                                            <select class="form-control" id="select">
+                                              <option>GENERAL 2.0 A</option>
+                                              <option>NOCTURNA 2.0 DHA</option>
+                                            </select>
+                                            </div>
+                                     <h4>Periodo de facturación</h4>
+                                  <div class="form-group">
+                                      <label for="inputPassword" class="col-lg-2 control-label">Desde</label>
+                                      <div class='input-group date' id='datetimepicker1'>
+                                      <input type='text' class="form-control col-lg-2" />
+                                      <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                                      </span>
+                                      </div>
+                                </div>
+                                   <div class="form-group">
+                                      <label for="inputPassword" class="col-lg-2 control-label">Hasta</label>
+                                      <div class='input-group date' id='datetimepicker2'>
+                                      <input type='text' class="form-control col-lg-2" />
+                                      <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                                      </span>
+                                      </div>
+                                    </div>    
+                                      <div class="form-group">
+                                      <label for="inputEmail" class="col-lg-2 control-label">Consumo</label>
+                                      <div class="col-lg-8">
+                                        <input type="text" class="form-control" id="inputconsumo" placeholder="Consumo en KWh">
+                                      </div>
+                                    </div>
+                                    <button type="button" class="btn btn-sm btn-danger">Calcular</button>
+                                  </form>
+                            </div>
+
+ </div>
+                                  <div class="col-lg-3 col-lg-offset-1">
+                                        <div class="panel panel-danger">
+                                            <div class="panel-heading">
+                                              <h3 class="panel-title">Resultado</h3>
+                                            </div>
+                                            <div class="panel-body text-center">
+                                              <h3> 183,32 €</h3>
+                                              <h6> Periodo de facturación: Desde 01/04/2014 a 01/06/2014</h6>
+                                              </div>
+                                          </div>
+                                            <div class="panel panel-danger">
+                                            <div class="panel-heading">
+                                              <h3 class="panel-title">Precio a Cobrar</h3>
+                                            </div>
+                                            <div class="panel-body text-center">
+                                              <h3><span class="rojo"> 0,113830 €/Kwh</span></h3>
+                                            
+                                              </div>
+                                          </div>
+                                     </div>
+
+
+                         
+                   </div>
+                </div>
+ </section>
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    &copy; cero20. Todos los derechos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://bootswatch.com/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+   <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="http://code.highcharts.com/modules/data.js"></script>
+    <script src="http://code.highcharts.com/modules/drilldown.js"></script>
+   <script src="http://code.highcharts.com/modules/exporting.js"></script>
+     <script src="js/resultados.js"></script>
+ <script src="js/jquery.bootstrap.wizard.js"></script>
+  <script src="js/multiform.js"></script>
+  <script src="js/prettify.js"></script>
+ <script src="js/moment.min.js"></script>
+<script  src="js/transition.js"></script>
+<script  src="js/collapse.js"></script>
+<script  src="js/bootstrap-datetimepicker.min.js"></script>
+<script  src="js/mercado.js"></script>
+   <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+         <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker2').datetimepicker();
+            });
+        </script>
+</body>
+
+
+</body>
+
+</html>
