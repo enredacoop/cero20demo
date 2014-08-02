@@ -24,8 +24,7 @@ float: right;
 	background-color: #eee;
 
 }
-<<<<<<< HEAD
-=======
+
 
 .multiform .form-group {
 
@@ -49,9 +48,6 @@ section #precio{
 	margin-top: -10px;
 	
 }
-
-
-
 
 .factura  {color: #ffffff;
  background-color: #FCCF85 !important; }
@@ -81,4 +77,37 @@ color: #43ac6a;
 color: #f04124;
 
 }
->>>>>>> 64c034b077154b592f692286597af7d0167df482
+
+table.tarifas {
+text-align: center;
+}
+
+table.tarifas>thead {
+	background-color: #0079a1;
+	color: #fff;
+}
+
+table.tarifas td {
+	border: 2px solid #fff;
+
+}
+
+table.tarifas>thead>tr>th {
+ 
+text-align: center !important;
+
+}
+
+table.tarifas>thead>tr>th, table.tarifas>tbody>tr>th, table.tarifas>tfoot>tr>th, table.tarifas>thead>tr>td, table.tarifas>tbody>tr>td, table.tarifas>tfoot>tr>td {
+
+vertical-align: middle;
+
+}
+
+table.tarifas img{
+	width: 30px;
+}
+
+table.tarifas .info{
+	font-weight: bold;
+}
