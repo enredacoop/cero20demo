@@ -19,29 +19,12 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 
 </head>
 
 <body id="view">
-    <div id="demo">
-  <div class="btn-group">
-  <button type="button" class="btn btn-success">Pantallas demo</button>
-  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="index.html">Login</a></li>
-    <li><a href="index2.html">Perfil</a></li>
-    <li><a href="form.html">Informe</a></li>
-    <li><a href="view.html">Resultado</a></li>
-
-    <li class="divider"></li>
-    <li><a href="dashboard.html">Aseguradora</a></li>
-  </ul>
-    </div>
-<hr>
-    </div>
-
     
 
     <header>
@@ -75,8 +58,9 @@
             <div class="col-lg-12">
                     <ul class="nav nav-tabs" style="margin-bottom: 15px;">
                       <li class="active"><a href="#home" data-toggle="tab">Informe preIEI+ </a></li>
-                      <li class=""><a href="#profile" data-toggle="tab">Informe XXX </a></li>
+                <!--      <li class="disabled"><a href="#profile" data-toggle="tab">Informe XXX </a></li>
                       <li class="disabled"><a>Informe YYY</a></li>
+                  -->
                       </ul>
                     <div id="myTabContent" class="tab-content">
                       <div class="tab-pane fade active in" id="home">
@@ -84,22 +68,22 @@
                            <div class="col-lg-4">
                             <ul class="list-group">
                               <li class="list-group-item">
-                             <h4> Nº informe: HelXXX02 </h4>
+                             <h4> Nº informe: Helxxxx01 </h4>
                               </li>
                               <li class="list-group-item">
-                              Fecha: 02/04/2014
+                              Fecha: 02/09/2014
                               </li>
                               <li class="list-group-item">
-                            Nombre: Pedro García García
+                            Nombre: JOSÉ FELIX
                               </li>
                               <li class="list-group-item">
-                              Nº identificativo: 654465151
+                              Nº identificativo: 65465151
                               </li>
                               <li class="list-group-item">
                               Compañía aseguradora: Helvetia Seguros
                               </li>
                                <li class="list-group-item text-center" >
-                              <button type="button" class="btn btn-success">Descarga el informe completo</button>
+                              <button type="button" onclick="window.location.href='informe-helxxxx01.pdf'"  class="btn btn-success">Descarga el informe completo</button>
 
                               </li>
                               </ul>
@@ -115,10 +99,10 @@
                                       </div>
                                       <div class="panel-body">
                                           <ul class="listicon"> 
-                                          <li><h4><i class="fa fa-laptop"></i> Equipos informáticos <span class="label label-success right">20%</span></h4></li>
-                                          <li><h4><i class="fa fa-lightbulb-o"></i> Iluminación <span class="label label-success right">10%</span></h4></li>
-                                          <li><h4><i class="fa fa-bar-chart-o"></i> Electrodomésticos <span class="label label-warning right">5%</span></h4></li>
-                                           <li><h4><i class="fa fa-sun-o"></i> Climatización <span class="label label-success  right">20%</span></h4></li>
+                                          <li><h4><i class="fa fa-power-off"></i> Standby <span class="label label-success right">28%</span></h4></li>
+                                          <li><h4><i class="fa fa-lightbulb-o"></i> Iluminación <span class="label label-success right">39%</span></h4></li>
+                                          <li><h4><i class="fa fa-bar-chart-o"></i> Aparatos Eléctricos <span class="label label-success right">29%</span></h4></li>
+                                           <li><h4><i class="fa fa-plug"></i> Electrodomésticos <span class="label label-success  right">48%</span></h4></li>
 
                                           </ul>
                                       </div>
@@ -130,11 +114,12 @@
                                         <h3 class="panel-title">Ahorros en Factura</h3>
                                       </div>
                                       <div class="panel-body">
-                                            <ul class="listicon"> 
+                         <ul class="listicon"> 
                                           
-                                          <li><h4><i class="fa fa-check-square"></i> Tarifa contratada <span class="label label-success  right">25%</span></h4></li>
-                                           <li><h4><i class="fa fa-bolt"></i>  Potencia contratada <span class="label label-success  right">20%</span></h4></li>
-
+                                          <li><h4><i class="fa fa-check-square"></i> Cambio comercializadora <span class="label label-success  right">8%</span></h5></li>
+                                           <li><h4><i class="fa fa-bolt"></i>  Potencia contratada <span class="label label-success  right">8%</span></h4></li>
+										 <li><h4><i class="fa fa-area-chart"></i>  Tarifa Nocturna <span class="label label-success  right">13%</span></h4></li>
+										  <li><h4><i class="fa fa-tree"></i>  Comercializadora verde <span class="label label-success  right">1%</span></h4></li>
                                           </ul>
                                       </div>
                                     </div>
@@ -144,19 +129,58 @@
 
                                <div class="row">
                                     <div class="col-lg-12">
-                                    <div class="panel panel-primary">
+                                    <div class="panel panel-success">
                                       <div class="panel-heading">
-                                        <h3 class="panel-title">Consumo general</h3>
+                                        <h3 class="panel-title">Ahorro en consumo</h3>
                                       </div>
                                       <div class="panel-body">
-                                        <div id="container" style="min-width: 610px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+                                      	  <div class="row text-center">
+                                    			<div class="col-lg-6">
+                                    			<h3>Standby</h3>
+                                    			 <div id="container1" style="min-width: 310px; height: 400px; max-width: 250px; margin: 0 auto"></div>
+
+                                    			</div>
+                                    				<div class="col-lg-6">
+                                    				<h3>Iluminación</h3>
+                                    			 <div id="container2" style="min-width: 310px; height: 400px; max-width: 250px; margin: 0 auto"></div>
+
+                                    			</div>
+                                    		</div>
+
+                                    		<div class="row text-center">
+                                    			<h3>Aparatos eléctricos</h3>
+                                    			<div class="col-lg-6">
+                                    			 <div id="container3" style="min-width: 310px; height: 400px; max-width: 250px; margin: 0 auto"></div>
+
+                                    			</div>
+                                    				<div class="col-lg-6">
+                                    			 <div id="container4" style="min-width: 310px; height: 400px; max-width: 250px; margin: 0 auto"></div>
+
+
+                                    			</div>
+                                    		</div>
+										<div class="row text-center">
+                                    			<h3>Electrodomésticos</h3>
+                                    			<div class="col-lg-6">
+                                    			 <div id="container5" style="min-width: 310px; height: 400px; max-width: 250px; margin: 0 auto"></div>
+
+                                    			</div>
+                                    				<div class="col-lg-6">
+                                    			 <div id="container6" style="min-width: 310px; height: 400px; max-width: 250px; margin: 0 auto"></div>
+
+
+                                    			</div>
+                                    		</div>
+
+
+
                                       </div>
                                     </div>
 
                                   </div>
 
                          </div>
-
+                         	<!--
                                 <div class="row">
                                     <div class="col-lg-12">
                                           <div class="panel panel-success">
@@ -167,10 +191,10 @@
                                                    <div id="container2" style="min-width: 610px; height: 400px; margin: 0 auto"></div>
                                             </div>
                                           </div>
-                                    </div>
+	                                    </div>
 
                          </div>
-                          
+							-->                          
 
 
                           </div>
@@ -262,7 +286,7 @@
                                               <h3 class="panel-title">Consumo por electronomesticos y media de ahorro</h3>
                                             </div>
                                             <div class="panel-body">
-                                                   <div id="container4" style="min-width: 610px; height: 400px; margin: 0 auto"></div>
+                                                   <div id="container" style="min-width: 610px; height: 400px; margin: 0 auto"></div>
                                             </div>
                                           </div>
                                     </div>
@@ -317,7 +341,7 @@
     <script src="http://code.highcharts.com/modules/drilldown.js"></script>
    <script src="http://code.highcharts.com/modules/exporting.js"></script>
 
-     <script src="js/resultados.js"></script>
+     <script src="js/informe.js"></script>
 
 </body>
 

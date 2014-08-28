@@ -27,25 +27,8 @@
 
 </head>
 
-<body>
-    <div id="demo">
-  <div class="btn-group">
-  <button type="button" class="btn btn-success">Pantallas demo</button>
-  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="index.html">Login</a></li>
-    <li><a href="index2.html">Perfil</a></li>
-    <li class="active"><a href="form.html">Informe</a></li>
-    <li><a href="view.html">Resultado</a></li>
-
-    <li class="divider"></li>
-    <li><a href="dashboard.html">Aseguradora</a></li>
-  </ul>
-    </div>
-<hr>
-    </div>
-
-    
+<body id="form">
+  
 
     <header>
             <div class="navbar navbar-inverse">
@@ -203,6 +186,32 @@
                         <input type="text" class="form-control" id="inputEmail" placeholder="Potencia">
                       </div>
                      </div> 
+                        <div class="form-group">
+                      <label for="select" class="col-lg-1 control-label">Tipo lamparas</label>
+                      <div class="col-lg-2">
+                        <select class="form-control" id="select">
+                         <option>Incandescentes</option>
+                          <option>halogena</option>
+                           <option>Fluorescente tubular </option>
+                            <option>LED</option>
+                        </select>
+                      </div>
+                      <label for="inputEmail" class="col-lg-1 control-label">Nº lamparas</label>
+                      <div class="col-lg-1">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="cantidad">
+                      </div>
+                   
+                      <label for="inputPassword" class="col-lg-1 control-label">Nº horas encencidads</label>
+                      <div class="col-lg-1">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="horas">
+                        </div>
+                    
+                     
+                      <label for="inputEmail" class="col-lg-1 control-label">Potencia por unidad</label>
+                      <div class="col-lg-1">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="Potencia">
+                      </div>
+                     </div> 
                                 
  </div>
 
@@ -248,7 +257,7 @@
                         <input type="text" class="form-control" id="inputEmail" placeholder="Años">
                       </div>
                    
-                      <label for="inputPassword" class="col-lg-1 control-label">Nº de veces por semana</label>
+                      <label for="inputPassword" class="col-lg-1 control-label">Marca o mdelo</label>
                       <div class="col-lg-1">
                         <input type="password" class="form-control" id="inputPassword" placeholder="veces">
                         </div>
@@ -295,6 +304,37 @@
                   </div>
                  </div>
 
+          <h5> Lavavajillas</h5>
+                 <div class="form-group">
+                      <label for="select" class="col-lg-1 control-label">Carga  (kg)</label>
+                      <div class="col-lg-2">
+                        <select class="form-control" id="select">
+                         <option>3 Kg</option>
+                          <option>5 Kg</option>
+                           <option>6 Kg</option>
+                            <option>8 Kg</option>
+                            </select>
+                      </div>
+                      <label for="inputEmail" class="col-lg-1 control-label">Antigüedad del equipo </label>
+                      <div class="col-lg-1">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="Años">
+                      </div>
+                   
+                      <label for="inputPassword" class="col-lg-1 control-label">Nº veces</label>
+                      <div class="col-lg-1">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="veces">
+                        </div>
+                     <label for="select" class="col-lg-1 control-label">Calificación energética</label>
+                      <div class="col-lg-2">
+                        <select class="form-control" id="select">
+                         <option>XXX</option>
+                          <option>YYY</option>
+                           <option>ZZZZ</option>
+                            <option>gas</option>
+                            </select>
+                    </div>
+                  </div>
+          
 
               </div>
             <div class="tab-pane" id="pills-tab5">
@@ -307,6 +347,22 @@
                       </div>
                    
                       <label for="inputPassword" class="col-lg-2 control-label">Nº de televisores iguales</label>
+                      <div class="col-lg-1">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="cantidad">
+                      </div>
+                    <label for="inputEmail" class="col-lg-2 control-label">Tiempo activo al día</label>
+                      <div class="col-lg-1">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="Horas">
+                      </div>        
+                  </div>
+                    <h5> Ordenadores</h5>
+                 <div class="form-group">
+                      <label for="inputEmail" class="col-lg-2 control-label">Tamaño de pantalla </label>
+                      <div class="col-lg-1">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="pulgadas">
+                      </div>
+                   
+                      <label for="inputPassword" class="col-lg-2 control-label">Nº de ordenadores iguales</label>
                       <div class="col-lg-1">
                         <input type="password" class="form-control" id="inputPassword" placeholder="cantidad">
                       </div>
@@ -389,7 +445,7 @@
                         </div>
                           </div>
                          <div class="form-group">
-                      <label for="inputPassword" class="col-lg-6 control-label">Producto contratado</label>
+                      <label for="inputPassword" class="col-lg-6 control-label">Tipo Contador</label>
                       <div class="col-lg-6">
                         <input type="password" class="form-control" id="inputPassword" placeholder="nombre">
                         </div>

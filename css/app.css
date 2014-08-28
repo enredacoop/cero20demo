@@ -10,6 +10,28 @@ float: right;
 
 }
 
+.btnw .btn {
+
+	width: 200px;
+}
+.yellow {
+background-color: yellow;
+border-color: yellow;
+color: #333;
+}
+
+..yellow:hover,.yellow :focus,.yellow :active,.yellow .active{
+
+background-color: rgb(226, 226, 67) !important;
+border-color: yellow;
+color: #333;
+}
+
+.text h5 {
+
+color: #808080;
+}
+
 .fixed {
 
 	position: fixed;
@@ -36,17 +58,33 @@ padding-bottom: 20px;
 
 list-style: none !important;
 }
-.botones a{
 
-}
 
 section {
 	margin-top: 90px;
-	
+	padding-top: 50px;
 }
-section #precio{
-	margin-top: -10px;
-	
+
+#mercado  {
+	margin-top: 50px;
+	border: 1px solid #007196;
+	background-color: #D7F7FC;
+}
+.azul {
+	color: #007196;;
+}
+#precio {
+	border: 1px solid yellow;
+	background-color: rgb(247, 247, 204);
+}
+
+#barato {
+	border: 1px solid #43ac6a;
+	background-color: rgba(103, 245, 110, 0.45);
+}
+#calculadora {
+border: 1px solid #f04124;
+background-color: #eee;
 }
 
 .factura  {color: #ffffff;
@@ -83,8 +121,8 @@ text-align: center;
 }
 
 table.tarifas>thead {
-	background-color: #0079a1;
-	color: #fff;
+background-color: #D5D3D3;
+color: #333;
 }
 
 table.tarifas td {
@@ -110,4 +148,34 @@ table.tarifas img{
 
 table.tarifas .info{
 	font-weight: bold;
+}
+
+.sticky {
+position: fixed;
+width: 100%;
+top: 0;
+z-index: 10000;
+	
+}
+.menu {
+
+	margin-left: 100px;
+}
+
+ul.listicon {
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+#view section{
+	margin-top: 20px;
+}
+
+#form section {
+	margin: 0px;
+	padding-top: 0px;
+}
+#form .jumbotron {
+	padding: 10px;
+
 }
