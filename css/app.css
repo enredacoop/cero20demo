@@ -1,5 +1,9 @@
 /* Specific styles */
 
+#perfil section {
+	margin-top: 20px;
+}
+
 footer {
     bottom: 0;
     display: block;
@@ -20,7 +24,7 @@ border-color: yellow;
 color: #333;
 }
 
-..yellow:hover,.yellow :focus,.yellow :active,.yellow .active{
+.yellow:hover,.yellow :focus,.yellow :active,.yellow .active{
 
 background-color: rgb(226, 226, 67) !important;
 border-color: yellow;

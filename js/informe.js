@@ -29,9 +29,9 @@ Highcharts.setOptions({
             },
             series: [{
                 type: 'pie',
-                name: 'Consumos',
+                name: ' ',
                 data: [
-                    ['Consumo en reposo ahorrado',    276.6],
+                    ['AHORROS',    276.6],
                     ['Consumo en activo',   518.3],
                     ['Consumo en reposo mantenido',       184.4]
                    
@@ -64,9 +64,9 @@ Highcharts.setOptions({
             },
             series: [{
                 type: 'pie',
-                name: 'Consumos',
+                name: ' ',
                 data: [
-                    ['Consumo ahorrado por Led',     213,16],
+                    ['AHORROS',     213,16],
                     ['Consumo eficiente en iluminación',337,9899]
                     
                 
@@ -99,9 +99,9 @@ Highcharts.setOptions({
             },
             series: [{
                 type: 'pie',
-                name: 'Consumos',
+                name: ' ',
                 data: [
-                    ['Consumo ahorrado',  251,424166],
+                    ['AHORROS',  251,424166],
                     ['Consumo eficiente',194,605]
                     
                 
@@ -134,9 +134,9 @@ Highcharts.setOptions({
             },
             series: [{
                 type: 'pie',
-                name: 'Consumos',
+                name: ' ',
                 data: [
-                    ['Consumo ahorrado',    60,2250],
+                    ['AHORROS',    60,2250],
                     ['Consumo eficiente',473,04]
                     
                 
@@ -169,8 +169,9 @@ Highcharts.setOptions({
             },
             series: [{
                 type: 'pie',
-                name: 'Consumos',
+                name: ' ',
                 data: [
+                    ['AHORROS',0],
                     ['Cocina',321,4],
                     ['Lavadora',    304,98],
                     ['Lavavajillas',     480,48],
@@ -205,9 +206,9 @@ Highcharts.setOptions({
             },
             series: [{
                 type: 'pie',
-                name: 'Consumos',
+                name: ' ',
                 data: [
-                     ['Consumo ahorrado',   673,855716198126],
+                     ['AHORROS',   673,855716198126],
                      ['Cocina',236,6],
                     ['Lavadora', 132,977777777778],
                       ['Lavavajillas', 246,75983935743],
